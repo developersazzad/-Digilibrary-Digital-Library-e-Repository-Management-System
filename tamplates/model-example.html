@@ -1,0 +1,226 @@
+<button class="btn btn-primary bg-primary-gradient mt-3" data-bs-toggle="modal" data-bs-target="#smallmodal">Small Modal</button>
+<button class="btn btn-success bg-success-gradient mt-3" data-bs-toggle="modal" data-bs-target="#largemodal">large Modal</button>
+
+  <div class="modal  fade" id="smallmodal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+              </div>
+              <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                  <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button class="btn btn-primary">Save changes</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+    <!-- Large Modal -->
+    <div class="modal fade" id="largemodal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- create Task -->
+    <div class="modal  fade" id="CreateTaskAdmin" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                 <h5 class="modal-title p_name">Create Job Type</h5>
+                  <button class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                 </button>
+              </div>
+                <form method="post">
+                <div class="modal-body p-0">
+                  <div class="card">
+                    <div class="card-body">
+                        <div class="">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="form-group">
+                                <label for="logo" class="form-label">Job Unique Id</label>
+                                <input type="text" class="form-control" name="unique_number" value="">
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="form-group">
+                                <label for="logo" class="form-label">Select Project</label>
+                                <select class="form-control" name="">
+                                  <option value="Bcet">Bect</option>
+                                  <option value="Mkppa">Mkppa</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="form-group">
+                                <label for="logo" class="form-label">Work Work</label>
+                                <select class="form-control" name="">
+                                  <option value="Graphix design 002">Graphix design 002</option>
+                                  <option value="Orgnic Markting 002">Orgnic Markting 002</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="form-group">
+                                <label for="mail" class="form-label">Task Name</label>
+                                <input type="text" name="task_name" class="form-control" placeholder="Task Name" value="">
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="form-group">
+                                <label for="mail" class="form-label">Task Points</label>
+                                <input type="number" name="points" class="form-control" placeholder="when complete Task get user" value="">
+                              </div>
+                            </div>
+                            <!-- custom fild option -->
+                              <div id="#box_custom_fild" class="row">
+                                <div class="col-12">
+                                  <h2 class="card-title text-center bg-green p-2">Custom Fild</h2>
+                                </div>
+                                  <div class="col-6">
+                                    <div class="form-group">
+                                      <label for="mail" class="form-label">Fild Name 01</label>
+                                      <input type="text" name="file_name_01" class="form-control" placeholder="Fild Name 01" value="">
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="form-group">
+                                      <label for="mail" class="form-label">Fild Value 01</label>
+                                      <input type="text" name="fild_val_01" class="form-control" placeholder="Fild value 01" value="">
+                                    </div>
+                                  </div>
+                                  <div class="col-12">
+                                    <a onclick="add_more()" href="javascript:void(0)" class="btn btn-sm btn-primary">Add More</a>
+                                  </div>
+                              </div>
+
+                             <!-- custom fild option -->
+                            <div class="col-12">
+                              <div class="form-group">
+                                <label class="form-label">Add Employee</label>
+                                <select class="form-control select2" data-placeholder="Choose Browser" multiple>
+                                  <option value="Firefox">
+                                    sazzad
+                                  </option>
+                                  <option value="Chrome selected">
+                                    Krim
+                                  </option>
+                                  <option value="Safari">
+                                    Rahim
+                                  </option>
+                                  <option selected value="Opera">
+                                    Habib
+                                  </option>
+                                  <option value="Internet Explorer">
+                                    Rakib
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-group">
+                                <label for="mail" class="form-label">Additional Note</label>
+                                <textarea name="name" style="min-height:100px" class="form-control"></textarea>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-group">
+                                <label for="mail" class="form-label">Task Points</label>
+                                <input type="number" name="points" class="form-control" placeholder="when complete Task get user" value="">
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="form-group">
+                                    <label class="custom-control custom-checkbox-md">
+                                      <input type="checkbox" class="custom-control-input" name="example-checkbox5" value="option5" checked="">
+                                      <span class="custom-control-label">Uplode Image</span>
+                                    </label>
+                                    <label class="custom-control custom-checkbox-md">
+                                      <input type="checkbox" class="custom-control-input" name="example-checkbox6" value="option6" checked="">
+                                      <span class="custom-control-label">Link Option</span>
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="form-group">
+                                    <label class="custom-control custom-checkbox-md">
+                                      <input type="checkbox" class="custom-control-input" name="example-checkbox8" value="option8" >
+                                      <span class="custom-control-label">Uplode file [pdf,doc,xls]</span>
+                                    </label>
+                                    <label class="custom-control custom-checkbox-md">
+                                      <input type="checkbox" class="custom-control-input" name="example-checkbox8" value="option9">
+                                      <span class="custom-control-label">Need Social</span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button onclick="create_user('s')" class="btn btn-primary">Create</button>
+                </div>
+              </form>
+            </div>
+        </div>
+    </div>
+    <!-- Create Work -->
+
+
+
+
+    <!-- custom fild option -->
+   <div class="col-12">
+     <div class="form-group">
+       <label class="form-label">Add Employee</label>
+       <select class="form-control select2" data-placeholder="Choose Browser" multiple>
+         <option value="Firefox">
+           sazzad
+         </option>
+         <option value="Chrome selected">
+           Krim
+         </option>
+         <option value="Safari">
+           Rahim
+         </option>
+         <option selected value="Opera">
+           Habib
+         </option>
+         <option value="Internet Explorer">
+           Rakib
+         </option>
+       </select>
+     </div>
+   </div>
