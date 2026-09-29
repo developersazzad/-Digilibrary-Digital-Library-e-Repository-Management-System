@@ -205,35 +205,7 @@ digilibrary/
 
 ---
 
-## ⚙️ Configuration
 
-```php
-<?php // config/config.php
-return [
-    'db' => [
-        'host' => 'localhost',
-        'name' => 'digilibrary',
-        'user' => 'root',
-        'pass' => '',
-    ],
-    'firebase' => [
-        'project_id'   => 'your-project',
-        'storage_bucket' => 'your-project.appspot.com',
-        'service_key'  => __DIR__ . '/firebase-service-account.json',
-    ],
-    'smtp' => [   // also editable at runtime from Admin → Settings
-        'host' => 'smtp.gmail.com',
-        'port' => 587,
-        'mail' => 'you@gmail.com',
-        'pass' => 'your-app-password',
-    ],
-    'reader' => [
-        'allow_download' => false,   // students read only — never download
-    ],
-];
-```
-
----
 
 ## 🔐 Reading Protection & Security
 
